@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<table>
+<h1>Words Matching</h1>
+<div class="wordlist">
 {% for word in wordlist %}
-<tr><td>{{ word }}</td></tr>
+<div class="wordbox">{{ word }}</div>
 {% endfor %}
-</table>
-
+</div>
 {% endblock %}

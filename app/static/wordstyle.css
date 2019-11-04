@@ -1,0 +1,21 @@
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: lightgrey;
+}
+main {
+    background-color: lightslategray;
+}
+
+.wordlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    font-size: large;
+    font-family: sans-serif;
+
+}
+
+.wordbox {
+    text-align: center;
+}
