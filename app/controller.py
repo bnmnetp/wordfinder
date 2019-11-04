@@ -1,3 +1,4 @@
+from flask import render_template
 from app import app
 import itertools
 
@@ -17,10 +18,5 @@ def letters_2_words(letters):
             if w in good_words:
                 word_set.add(w)
 
-    res = "<ol>"
-    for word in sorted(word_set):
-        res += f"<li> {word} </li>"
 
-    res += "</ol>"
-
-    return res
+    return render_template('wordlist.html', wordlist=sorted(word_set))
