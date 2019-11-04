@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Word Finder</h1>
+    <form action="/words" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.csrf_token }}
+        {{form.avail_letters}}
+        {{form.submit()}}
+    </form>
+{% endblock %}
